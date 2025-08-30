@@ -1,13 +1,14 @@
 .header {
   width: 100%;
   background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1.2rem 2rem;
   flex-wrap: wrap;
   gap: 1rem;
   background-color: #ffffff;
@@ -37,14 +38,40 @@
   max-width: 100%;
 }
 
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.company-name {
+  font-size: 2.4rem;
+  font-style: italic;
+  font-weight: 700;
+  color: #0066cc;
+  letter-spacing: 1px;
+  margin-bottom: 0.1em;
+}
+
+.company-type {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #888;
+  margin-top: -2px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 .search-container {
   display: flex;
   align-items: center;
-  background: #f1f1f1;
+  background: #f1f3f6;
   border-radius: 24px;
-  padding: 4px;
+  padding: 4px 8px;
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
 }
 
 .search-input {
@@ -61,30 +88,18 @@
   padding: 8px;
   border: none;
   border-radius: 4px;
-  background-color: transparent;
+  background-color: #f4f7fa;
   cursor: pointer;
-  font-size: 1rem;
-  white-space: nowrap;
+  font-size: 1.2rem;
+  transition: background 0.2s;
 }
 
-.logo-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.search-btn:hover, .profile-btn:hover {
+  background: #e6f0fa;
 }
 
-.company-name {
-  font-size: 2.2rem;
-  font-style: italic;
-  font-weight: bold;
-  color: #333;
-}
-
-.company-type {
-  font-size: 1.4rem;
-  font-style: italic;
-  color: #666;
-  margin-top: -5px;
+.profile-btn {
+  margin-left: 8px;
 }
 
 /* Media Queries */
