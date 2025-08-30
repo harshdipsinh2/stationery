@@ -67,6 +67,26 @@
   white-space: nowrap;
 }
 
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.company-name {
+  font-size: 2.2rem;
+  font-style: italic;
+  font-weight: bold;
+  color: #333;
+}
+
+.company-type {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #666;
+  margin-top: -5px;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
   .top-bar {

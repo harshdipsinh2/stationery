@@ -1,13 +1,15 @@
 import "./header.css";
 import Navbar from "../navbar/navbar";
-import Logo from "../../assets/Logo.png";
 
 function Header() {
   return (
     <header className="header">
       <div className="top-bar">
         <div className="left">
-          <img src={Logo} alt="Logo" className="logo" />
+          <div className="logo-text">
+            <span className="company-name">Rudra</span>
+            <span className="company-type">enterprise</span>
+          </div>
         </div>
 
         <div className="center">
@@ -30,5 +32,5 @@ function Header() {
     </header>
   );
 }
-//jasdbajfa
+
 export default Header;
