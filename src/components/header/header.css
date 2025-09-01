@@ -84,7 +84,7 @@
   width: 100%;
 }
 
-.search-btn, .profile-btn {
+.search-btn, .profile-btn, .cart-btn {
   padding: 8px;
   border: none;
   border-radius: 4px;
@@ -94,7 +94,7 @@
   transition: background 0.2s;
 }
 
-.search-btn:hover, .profile-btn:hover {
+.search-btn:hover, .profile-btn:hover, .cart-btn:hover {
   background: #e6f0fa;
 }
 
