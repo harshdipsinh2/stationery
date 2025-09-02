@@ -15,7 +15,7 @@ function Footer() {
               Rudra Stationery Xerox <br />
               G F 14 Sholk Elysium Opp Uma Bungalows <br />
               B/H Ganesh Bungalows R C Technical, <br />
-              R C Technical College Road, Ahmedabad, Ellis Bridge-380006
+              R C Technical College Road, Ahmedabad-380061
             </p>
           </div>
         </div>
