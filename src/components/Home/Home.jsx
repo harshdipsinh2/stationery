@@ -1,8 +1,11 @@
 import './Home.css';
-import { FaBuilding, FaIndustry, FaSchool, FaBoxOpen } from 'react-icons/fa';
+import { FaBuilding, FaIndustry, FaSchool, FaBoxOpen, FaPrint, FaDigitalOcean, FaBroom, FaClipboardList } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <div className="home">
       {/* Hero Section */}
@@ -26,6 +29,7 @@ function Home() {
           className="cta-btn"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          onClick={() => navigate("/office-stationery")}
         >
           Explore Products
         </motion.button>
@@ -60,6 +64,34 @@ function Home() {
               <div className="service-icon">{service.icon}</div>
               <h3>{service.title}</h3>
               <p>{service.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* Corporate Solutions */}
+      <section className="solutions">
+        <h2>Corporate Solutions</h2>
+        <p className="solutions-intro">
+          We provide end-to-end solutions for corporate offices, ensuring smooth operations 
+          with our wide range of products and services.
+        </p>
+        <div className="solutions-grid">
+          {[
+            { icon: <FaPrint />, title: "Printing Solutions", desc: "All types of office printing needs – letterheads, visiting cards, envelopes, and more." },
+            { icon: <FaDigitalOcean />, title: "Digital Printing", desc: "High-quality digital printing for presentations, reports, and corporate materials." },
+            { icon: <FaBroom />, title: "Housekeeping Supplies", desc: "Cleaning materials, hygiene products, and office maintenance essentials." },
+            { icon: <FaClipboardList />, title: "Corporate Office Materials", desc: "Everything from files, folders, markers, and whiteboards to packaging supplies." }
+          ].map((sol, i) => (
+            <motion.div
+              key={i}
+              className="solution-card"
+              whileHover={{ y: -8, scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 200 }}
+            >
+              <div className="solution-icon">{sol.icon}</div>
+              <h3>{sol.title}</h3>
+              <p>{sol.desc}</p>
             </motion.div>
           ))}
         </div>

@@ -4,10 +4,10 @@ import { Mail, Phone, Home, User } from "lucide-react"; // lightweight icons
 
 function ProfilePage() {
   const user = {
-    name: "Harshdipsinh Gohil",
-    address: "123 Stationery Street, Ahmedabad, India",
-    phone: "+91 98765 43210",
-    email: "harshdipsinh@example.com",
+    name: "Jayveersinh Gohil",
+    address: "Ahmedabad, India",
+    phone: "+91 70******68",
+    email: "jayv*******0@example.com",
   };
 
   return (

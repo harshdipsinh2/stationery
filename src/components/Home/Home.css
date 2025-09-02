@@ -110,3 +110,34 @@ h3 {
     padding: 1rem;
   }
 }
+/* Corporate Solutions */
+.solutions {
+  margin: 3rem 0;
+  text-align: center;
+}
+.solutions-intro {
+  font-size: 1.15rem;
+  margin-bottom: 2rem;
+  color: #444;
+}
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+.solution-card {
+  padding: 2rem;
+  background: #fdfdfd;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.solution-card:hover {
+  background: #f0f8ff;
+}
+.solution-icon {
+  font-size: 2.5rem;
+  color: #0066cc;
+  margin-bottom: 1rem;
+}
