@@ -120,6 +120,34 @@ function Home() {
           ))}
         </div>
       </section>
+            {/* Categories */}
+      <section className="categories">
+        <h2>Premium Stationery</h2>
+        <div className="category-grid">
+          {[
+            { name: "Pens", image: "/src/assets/Home/pens.jpg" },
+            { name: "Pencils", image: "/src/assets/Home/pencil.jpg" },
+            { name: "Notebooks", image: "/src/assets/Home/notebook.jpg" },
+            { name: "Notepads", image: "/src/assets/Home/notepads.jpg" },
+            { name: "Planners", image: "/src/assets/Home/planners.jpg" },
+            { name: "Highlighters", image: "/src/assets/Home/hightlighters.jpg" },
+            { name: "Files & Folders", image: "/src/assets/Home/files and folders.jpg" },
+            { name: "To-do Lists", image: "/src/assets/Home/TODO list.jpg" },
+            { name: "Sticky Notes", image: "/src/assets/Home/sticky notes.jpg" },
+            { name: "Memo Blocks", image: "/src/assets/Home/memo blocks.jpg" },
+      
+
+          ].map((cat, i) => (
+            <div className="category-card" key={i}>
+              <div className="category-image">
+                <img src={cat.image} alt={cat.name} />
+              </div>
+              <p>{cat.name}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
     </div>
   );
 }
