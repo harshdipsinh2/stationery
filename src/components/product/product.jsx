@@ -25,7 +25,7 @@ export const products = {
       id: 4,
       name: 'Apsara Absolute Extra Dark Pencils',
       price: 799.0,
-      image: '/src/assets/stationery/apsra-extra-dark.jpg',
+      image: '/stationery/apsra-extra-dark.jpg',
       rating: 0
     },
     {
