@@ -125,7 +125,7 @@ function Home() {
         <h2>Premium Stationery</h2>
         <div className="category-grid">
           {[
-            { name: "Pens", image: "/src/assets/Home/pens.jpg" },
+            { name: "Pens", image: "/assets/Home/pens.jpg" },
             { name: "Pencils", image: "/src/assets/Home/pencil.jpg" },
             { name: "Notebooks", image: "/src/assets/Home/notebook.jpg" },
             { name: "Notepads", image: "/src/assets/Home/notepads.jpg" },
