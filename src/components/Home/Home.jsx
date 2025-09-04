@@ -126,15 +126,15 @@ function Home() {
         <div className="category-grid">
           {[
             { name: "Pens", image: "/assets/Home/pens.jpg" },
-            { name: "Pencils", image: "/src/assets/Home/pencil.jpg" },
-            { name: "Notebooks", image: "/src/assets/Home/notebook.jpg" },
-            { name: "Notepads", image: "/src/assets/Home/notepads.jpg" },
-            { name: "Planners", image: "/src/assets/Home/planners.jpg" },
-            { name: "Highlighters", image: "/src/assets/Home/hightlighters.jpg" },
-            { name: "Files & Folders", image: "/src/assets/Home/files and folders.jpg" },
-            { name: "To-do Lists", image: "/src/assets/Home/TODO list.jpg" },
-            { name: "Sticky Notes", image: "/src/assets/Home/sticky notes.jpg" },
-            { name: "Memo Blocks", image: "/src/assets/Home/memo blocks.jpg" },
+            { name: "Pencils", image: "/assets/Home/pencil.jpg" },
+            { name: "Notebooks", image: "/assets/Home/notebook.jpg" },
+            { name: "Notepads", image: "/assets/Home/notepads.jpg" },
+            { name: "Planners", image: "/assets/Home/planners.jpg" },
+            { name: "Highlighters", image: "/assets/Home/hightlighters.jpg" },
+            { name: "Files & Folders", image: "/assets/Home/files and folders.jpg" },
+            { name: "To-do Lists", image: "/assets/Home/TODO list.jpg" },
+            { name: "Sticky Notes", image: "/assets/Home/sticky notes.jpg" },
+            { name: "Memo Blocks", image: "/assets/Home/memo blocks.jpg" },
       
 
           ].map((cat, i) => (
