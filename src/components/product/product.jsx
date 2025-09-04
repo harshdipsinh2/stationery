@@ -4,28 +4,28 @@ export const products = {
       id: 1,
       name: 'Saino Softek',
       price: 100,
-      image: '/src/assets/stationery/saino-softek.jpg',
+      image: '/public/assets/stationery/saino-softek.jpg',
       rating: 5
     },
     {
       id: 2,
       name: 'Saino Trio',
       price: 199.0,
-      image: '/src/assets/stationery/saiono-trio.jpg',
+      image: '/public/assets/stationery/saiono-trio.jpg',
       rating: 0
     },
     {
       id: 3,
       name: 'Hauser XO',
       price: 680.0,
-      image: '/src/assets/stationery/hauser-xo.jpg',
+      image: '/public/assets/stationery/hauser-xo.jpg',
       rating: 0
     },
     {
       id: 4,
       name: 'Apsara Absolute Extra Dark Pencils',
       price: 799.0,
-      image: '/stationery/apsra-extra-dark.jpg',
+      image: '/public/assets/stationery/apsra-extra-dark.jpg',
       rating: 0
     },
     {
@@ -83,21 +83,21 @@ export const products = {
       id: 2,
       name: 'Floor Mop Deluxe',
       price: 499.00,
-      image: '/src/assets/Housekeeping/mop.jpg',
+      image: '/assets/Housekeeping/mop.jpg',
       rating: 0
     },
     {
       id: 3,
       name: 'Surface Cleaner',
       price: 199.00,
-      image: '/src/assets/Housekeeping/surface-cleaner.jpg',
+      image: '/assets/Housekeeping/surface-cleaner.jpg',
       rating: 0
     },
     {
       id: 4,
       name: 'Cleaning Gloves Set',
       price: 149.00,
-      image: '/src/assets/Art & Crafts/glove.jpg',
+      image: '/assets/Art & Crafts/glove.jpg',
       rating: 0
     },
     {
@@ -162,7 +162,7 @@ export const products = {
       id: 3,
       name: 'Packing Tape',
       price: 99.00,
-      image: '/src/assets/Packaging/packing-tap.jpg',
+      image: '/assets/Packaging/packing-tap.jpg',
       rating: 0
     },
     {
@@ -183,7 +183,7 @@ export const products = {
       id: 6,
       name: 'Mailing Envelopes',
       price: 249.00,
-      image: '/src/assets/Packaging/envelops.jpg',
+      image: '/assets/Packaging/envelops.jpg',
       rating: 0
     },
     {
@@ -220,14 +220,14 @@ export const products = {
       id: 1,
       name: 'Artist Brush Set',
       price: 899.00,
-      image: '/src/assets/Art & Crafts/brush-set.jpg',
+      image: '/assets/Art & Crafts/brush-set.jpg',
       rating: 0
     },
     {
       id: 2,
       name: 'Sketch Book ',
       price: 299.00,
-      image: '/src/assets/Art & Crafts/sketch-book.jpg',
+      image: '/assets/Art & Crafts/sketch-book.jpg',
       rating: 0
     },
     {
@@ -241,21 +241,21 @@ export const products = {
       id: 4,
       name: 'Color Pencil Set',
       price: 249.00,
-      image: '/src/assets/Art & Crafts/colour-pencil.jpg',
+      image: '/assets/Art & Crafts/colour-pencil.jpg',
       rating: 0
     },
     {
       id: 5,
       name: 'Craft Paper Pack',
       price: 199.00,
-      image: '/src/assets/Art & Crafts/craft-paper  .jpg',
+      image: '/assets/Art & Crafts/craft-paper  .jpg',
       rating: 0
     },
     {
       id: 6,
       name: 'Modeling Clay Kit',
       price: 399.00,
-      image: '/src/assets/Art & Crafts/clay.jpg',
+      image: '/assets/Art & Crafts/clay.jpg',
       rating: 0
     },
     {
