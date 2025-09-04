@@ -4,28 +4,28 @@ export const products = {
       id: 1,
       name: 'Saino Softek',
       price: 100,
-      image: '/assets/stationery/saino-softek.jpg',
+      image: '/assets/Stationery/saino-softek.jpg',
       rating: 5
     },
     {
       id: 2,
       name: 'Saino Trio',
       price: 199.0,
-      image: '/assets/stationery/saiono-trio.jpg',
+      image: '/assets/Stationery/saiono-trio.jpg',
       rating: 0
     },
     {
       id: 3,
       name: 'Hauser XO',
       price: 680.0,
-      image: '/assets/stationery/hauser-xo.jpg',
+      image: '/assets/Stationery/hauser-xo.jpg',
       rating: 0
     },
     {
       id: 4,
       name: 'Apsara Absolute Extra Dark Pencils',
       price: 799.0,
-      image: '/assets/stationery/apsra-extra-dark.jpg',
+      image: '/assets/Stationery/apsra-extra-dark.jpg',
       rating: 0
     },
     {
