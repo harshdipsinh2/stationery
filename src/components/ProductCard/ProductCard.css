@@ -1,0 +1,428 @@
+.product-card {
+  background-color: var(--bg-primary);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 420px; /* Standardize minimum height */
+  width: 100%; /* Ensure consistent width */
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.product-image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  overflow: hidden;
+}
+
+.product-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.product-image-skeleton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--bg-secondary) 25%,
+    var(--bg-tertiary) 50%,
+    var(--bg-secondary) 75%
+  );
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 4px 8px;
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  z-index: 1;
+}
+
+.stock-low {
+  background-color: var(--warning);
+  color: white;
+}
+
+.out-of-stock {
+  background-color: var(--error);
+  color: white;
+}
+
+.featured {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.product-info {
+  padding: var(--spacing-md);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure consistent spacing */
+  min-height: 200px; /* Minimum height for product info area */
+}
+
+.product-title {
+  margin: 0 0 var(--spacing-xs);
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  line-height: 1.3;
+  min-height: 2.6em; /* Ensure consistent height for titles */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text-primary);
+  cursor: default;
+  max-height: 2.6em; /* Maximum height for consistency */
+}
+
+.product-price {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-xs);
+}
+
+.product-category {
+  color: var(--text-light);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-md);
+  text-transform: capitalize;
+}
+
+.product-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-top: auto;
+}
+
+.product-cart-controls {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-primary);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+  width: 100%;
+  height: 50px; /* Match height with add-to-cart button */
+  margin-top: auto; /* Push to bottom of container */
+  padding: 0 5px; /* Add some padding inside the control */
+}
+
+.quantity-controls:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-color: var(--primary-color);
+}
+
+.quantity-btn {
+  background-color: transparent;
+  border: none;
+  width: 40px; /* Adjusted size */
+  height: 40px; /* Adjusted size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  color: var(--text-primary);
+  border-radius: 50%; /* Make buttons round */
+  margin: 0 5px; /* Add margin for spacing */
+}
+
+.quantity-btn:hover:not(:disabled) {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.quantity-btn:active:not(:disabled) {
+  background-color: var(--primary-color-dark);
+  color: white;
+  transform: scale(0.95);
+}
+
+.quantity-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quantity-btn svg {
+  width: 22px; /* Bigger icon */
+  height: 22px; /* Bigger icon */
+  transition: transform var(--transition-normal);
+}
+
+.quantity-btn:hover:not(:disabled) svg {
+  transform: scale(1.1);
+}
+
+.quantity-display {
+  padding: 0;
+  min-width: 40px;
+  width: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.25rem; /* Larger font size */
+  color: var(--primary-color);
+  user-select: none;
+  background-color: rgba(255, 255, 255, 0.9); /* Improved background */
+  border-radius: var(--radius-sm);
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto; /* Center both horizontally and vertically */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.product-add-to-cart {
+  flex: 1;
+  padding: 12px 18px;
+  height: 50px; /* Increased height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1rem; /* Ensure consistent font size */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-radius: var(--radius-md);
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+  margin-top: auto; /* Push to bottom of container */
+}
+
+.product-add-to-cart:hover {
+  /* Removed background-color change */
+  color: white; /* Ensure text remains white on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Removed transform effect that was causing the hover animation */
+}
+
+.product-add-to-cart:active {
+  /* Removed transform effect and background color change */
+  box-shadow: var(--shadow-sm);
+}
+
+.product-add-to-cart.out-of-stock {
+  background-color: var(--bg-secondary);
+  color: var(--text-light);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+/* Additional enhancements for product cards */
+
+/* Add subtle border to separate cards visually */
+.product-card {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Add shadow to quantity controls to make them stand out */
+.quantity-controls {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add subtle highlight effect to quantity buttons */
+.quantity-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.quantity-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s;
+}
+
+.quantity-btn:hover::before {
+  width: 120px;
+  height: 120px;
+}
+
+/* Make product cards more uniform in grid layouts */
+@media (min-width: 768px) {
+  .product-card {
+    max-width: 100%;
+  }
+}
+
+/* Ensure "Add to Cart" text remains visible on smaller screens */
+@media (max-width: 576px) {
+  .product-add-to-cart span {
+    display: inline-block;
+  }
+  
+  .product-info {
+    min-height: 180px;
+  }
+}
+/* Animation for quantity changes */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  50% {
+    transform: scale(1.15);
+    background-color: var(--primary-color);
+    color: white;
+  }
+  100% {
+    transform: scale(1);
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.quantity-added {
+  animation: pulse 0.4s ease-in-out;
+}
+
+.product-cart-controls {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Hover effect for product card - removed to prevent conflicts */
+
+/* Responsive styles for small screens */
+@media (max-width: 576px) {
+  .quantity-controls {
+    width: 100%;
+  }
+  
+  .quantity-btn {
+    flex: 1;
+  }
+  
+  .quantity-display {
+    flex: 2;
+  }
+}
+.product-card {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add a subtle action overlay when hovering over the product card */
+.product-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.product-card:hover::after {
+  opacity: 1;
+}
+
+/* Button hover effect - transition modified */
+.product-add-to-cart {
+  transition: box-shadow 0.2s ease;
+}
+
+.product-add-to-cart:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Improve accessibility with focus styles */
+.quantity-btn:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: -2px;
+}
+
+/* Stock indicator with better visibility */
+.product-stock {
+  display: inline-block;
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  color: var(--text-light);
+}
+
+.product-stock.in-stock {
+  color: var(--success);
+}
+
+.product-stock.low-stock {
+  color: var(--warning);
+}
+
+.product-stock.out-of-stock {
+  color: var(--error);
+}

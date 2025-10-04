@@ -1,0 +1,141 @@
+/* Settings page styling */
+.profile-settings {
+  padding: 20px 30px;
+}
+
+.profile-settings h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.profile-section {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #eaeef2;
+}
+
+.profile-section h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+  font-weight: 600;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 15px;
+  height: 48px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4a6de5;
+  box-shadow: 0 0 0 3px rgba(74, 109, 229, 0.15);
+}
+
+.checkbox-group {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  accent-color: #4a6de5;
+}
+
+.checkbox-group label {
+  display: inline;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.btn {
+  background-color: #4a6de5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #3a5dd5;
+}
+
+.btn-secondary {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  color: #64748b;
+}
+
+.btn-secondary:hover {
+  background-color: #f8fafc;
+  color: #334155;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.alert {
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.alert-success {
+  background-color: #ecfdf5;
+  color: #10b981;
+  border-left: 4px solid #10b981;
+}
+
+.alert-danger {
+  background-color: #fef2f2;
+  color: #ef4444;
+  border-left: 4px solid #ef4444;
+}
+
+/* Email preferences section */
+.email-preferences {
+  margin-top: 30px;
+}
+
+.checkbox-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
